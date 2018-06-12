@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appPathtime">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+    <script src="home/controller/homeController.js"></script>
+    <script src="home/directive/frame.js"></script>
+
+</head>
+<body>
+    <div ng-include src="'global/template/header.html'"></div>
+    <div class="cityBar" ng-controller="cityController">city : <input ng-model="city"></div>
+    <div class="content">
+        <div class="headerContent">You rated a place</div>
+        <div class="frame">
+            <p frame=""></p>
+        </div>
+        <div class="socialBar">
+            <i class="fas fa-heart" ng-click="count = count + 1" ng-init="count = 0">
+                {{count}}
+            </i>
+            <i class="fa fa-comment-o"></i>
+
+        </div>
+    </div>
+</body>
+</html>
