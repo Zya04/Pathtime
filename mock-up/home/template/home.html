@@ -1,0 +1,36 @@
+<div class="home">
+    <div class="cityBar" ng-controller="cityController">
+        CITY : <select ng-model="city" ng-options="x for x in city"> </select>
+    </div>
+    <div class="content">
+        <div class="headerContent">
+            <div class="profilePicture">
+                <img src="././assets/frames/profilePicture.jpg" class="picture" >
+            </div>
+            <span class="text"><b>You </b> rated a place</span>
+            <span class="text hour"> 2H ago</span>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="ratings">
+            <b>4.0</b>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="frame">
+            <p frame=""></p>
+        </div>
+        <div class="socialBar">
+            <i class="fas fa-heart" ng-click="count = count + 1" ng-init="count = 0">
+                {{count}}
+            </i>
+            <i class="fa fa-comment-o"></i>
+            <i class="fas fa-link"></i>
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </div>
+</div>

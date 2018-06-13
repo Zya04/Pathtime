@@ -14,23 +14,11 @@
     <script src="app.js"></script>
     <script src="home/controller/homeController.js"></script>
     <script src="home/directive/frame.js"></script>
+    <script src="home/directive/home.js"></script>
 
 </head>
 <body>
     <div ng-include src="'global/template/header.html'"></div>
-    <div class="cityBar" ng-controller="cityController">city : <input ng-model="city"></div>
-    <div class="content">
-        <div class="headerContent">You rated a place</div>
-        <div class="frame">
-            <p frame=""></p>
-        </div>
-        <div class="socialBar">
-            <i class="fas fa-heart" ng-click="count = count + 1" ng-init="count = 0">
-                {{count}}
-            </i>
-            <i class="fa fa-comment-o"></i>
-
-        </div>
-    </div>
+    <home></home>
 </body>
 </html>
