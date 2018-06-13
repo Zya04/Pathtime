@@ -1,0 +1,6 @@
+{
+    "devDependencies": {
+        "angular": "^1.6.9",
+        "angular-route": "^1.6.9"
+    }
+}
