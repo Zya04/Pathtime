@@ -118,5 +118,4 @@ time, mark, audio, video {
 
 .rating i:hover, .rating i:focus, .rating i:hover~i, .rating i:focus~i {
     color: black;
-    cursor: pointer;
 }
